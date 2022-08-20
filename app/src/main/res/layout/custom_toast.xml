@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clCustomToast"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#514AFF"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivToastIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="70dp"
+        android:minHeight="70dp"
+        android:src="@drawable/ic_toast"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvToastText"
+        android:layout_width="200dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ivToastIcon"
+        app:layout_constraintStart_toEndOf="@+id/ivToastIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="20dp"
+        android:text="Thank You For ordering !! See you again " />
+</androidx.constraintlayout.widget.ConstraintLayout>
